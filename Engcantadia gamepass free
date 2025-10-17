@@ -1,0 +1,107 @@
+-- Load OrionLib
+local player = game.Players.LocalPlayer
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+
+-- Create Window
+local Window = OrionLib:MakeWindow({
+    Name = "Engcantadia Chaos",
+    HidePremium = false,
+    SaveConfig = true,
+    ConfigFolder = "EngcantadiaChaos",
+    IntroEnabled = true,
+    IntroText = "HINDI KO NA KAYA - by lyravoid",
+    Icon = "", -- optional icon URL
+})
+
+-- Create Tab
+local Tab = Window:MakeTab({
+    Name = "Characters",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+-- Create Section
+local Section = Tab:AddSection({
+    Name = "Main"
+})
+
+-- Notification
+OrionLib:MakeNotification({
+    Name = "Executed Successfully!",
+    Content = "A Very Good GUI",
+    Image = "rbxassetid://4483345998",
+    Time = 5
+})
+
+-- Buttons
+Tab:AddButton({
+    Name = "Mitena",
+    Callback = function()
+        local mitenaGamepass = player:WaitForChild("PlayerGui")
+            :WaitForChild("Character")
+            :WaitForChild("Frame")
+            :WaitForChild("ScrollingFrame")
+            :WaitForChild("MitenaGamepass")
+        mitenaGamepass.Visible = true
+    end
+})
+
+Tab:AddButton({
+    Name = "MitenaWardrobe",
+    Callback = function()
+        local mitenaWardrobe = player:WaitForChild("PlayerGui")
+            :WaitForChild("Character")
+            :WaitForChild("Frame")
+            :WaitForChild("ScrollingFrame")
+            :WaitForChild("MitenaWardrobe")
+        mitenaWardrobe.Visible = true
+    end
+})
+
+Tab:AddButton({
+    Name = "Amihan",
+    Callback = function()
+        local amihan = player:WaitForChild("PlayerGui")
+            :WaitForChild("Character")
+            :WaitForChild("Frame")
+            :WaitForChild("ScrollingFrame")
+            :WaitForChild("Amihan")
+        amihan.Visible = true
+    end
+})
+
+Tab:AddButton({
+    Name = "Amihan Ivtre",
+    Callback = function()
+        local amihanSkinIvtre = player:WaitForChild("PlayerGui")
+            :WaitForChild("Character")
+            :WaitForChild("Frame")
+            :WaitForChild("ScrollingFrame")
+            :WaitForChild("AmihanSkinIvtre")
+        amihanSkinIvtre.Visible = true
+    end
+})
+
+Tab:AddButton({
+    Name = "Cassiopeia Skin",
+    Callback = function()
+        local cassiopeiaSkin = player:WaitForChild("PlayerGui")
+            :WaitForChild("Character")
+            :WaitForChild("Frame")
+            :WaitForChild("ScrollingFrame")
+            :WaitForChild("Cassiopeia Skin") -- object has a space
+        cassiopeiaSkin.Visible = true
+    end
+})
+
+Tab:AddButton({
+    Name = "Anaca",
+    Callback = function()
+        local anacaBadgePass = player:WaitForChild("PlayerGui")
+            :WaitForChild("Character")
+            :WaitForChild("Frame")
+            :WaitForChild("ScrollingFrame")
+            :WaitForChild("AnacaBADGEPASS")
+        anacaBadgePass.Visible = true
+    end
+})
