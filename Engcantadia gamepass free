@@ -1,8 +1,6 @@
--- Load OrionLib
 local player = game.Players.LocalPlayer
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 
--- Create Window
 local Window = OrionLib:MakeWindow({
     Name = "Engcantadia Chaos",
     HidePremium = false,
@@ -13,19 +11,16 @@ local Window = OrionLib:MakeWindow({
     Icon = "", -- optional icon URL
 })
 
--- Create Tab
 local Tab = Window:MakeTab({
     Name = "Characters",
     Icon = "rbxassetid://4483345998",
     PremiumOnly = false
 })
 
--- Create Section
 local Section = Tab:AddSection({
     Name = "Main"
 })
 
--- Notification
 OrionLib:MakeNotification({
     Name = "Executed Successfully!",
     Content = "A Very Good GUI",
@@ -33,7 +28,6 @@ OrionLib:MakeNotification({
     Time = 5
 })
 
--- Buttons
 Tab:AddButton({
     Name = "Mitena",
     Callback = function()
